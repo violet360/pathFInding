@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table
+{
+  /*-webkit-user-select: none; /* Safari 3.1+ */
+  /*-moz-user-select: none; /* Firefox 2+ */
+  /*-ms-user-select: none; /* IE 10+ */
+  /*user-select: none; /* Standard syntax */
+  border: 1px solid black;
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>path finding algorithms</h2>
+<div id="intro">feel the heat of visualisation</div>
+<table id = "myTable">
+</table>
+<button onclick = "myFunction(); this.onclick=null;">fuck it</button>
+<div class="dropdown">
+  <select onchange="test(this)">
+    <option disabled selected value="0">--Select Algo--</option>
+    <option value = "1">DFS</option>
+    <option value = "2">BFS</option>
+    <option value = "3">DK</option>
+  </select>
+</div>
+<script type="text/javascript" src="pathFinding.js"></script>
+</body>
+</html>
