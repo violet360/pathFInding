@@ -68,7 +68,7 @@ function restore()
 	   		cell.setAttribute("class", "unvisited");
     		}
   	}
-  	document.querySelector(".dropdown").style.display="inline-block";
+  	document.querySelector(".dropdown").style.display="inlinae-block";
   	var btn = document.createElement("button");
   	var obj = document.body.appendChild(btn);
  	obj.innerHTML = "initiate";
@@ -223,9 +223,13 @@ class path_finding
 
 		x.setAttribute("class", "visited");//changing class of src from unvisited to visited
 		var address = x.getAttribute("id");
-		// setTimeout(function(){
-		// 	x.style.background = "yellow";
-		// }, 6) //the coloring is lagging and two adjacent cells are not colored with an interval if 2 sec........
+		// console.log("This is printed every time XD, chutiye");
+		setTimeout(function()
+		{
+			x.style.background = "yellow";
+			console.log("dfvdf");
+		}, 7000); 
+		//the coloring is lagging and two adjacent cells are not colored with an interval if 2 sec........
 		// x.style.background = "yellow";
 		for(var idx=0; idx<adj[address].length; idx++)
 		{
